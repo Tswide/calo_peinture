@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calo Peinture</title>
+    <link rel="icon" type="image/x-icon" href="../image/calologo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="nav">
+        <div class="navbar">
+            <div class="logo-titre">
+                <img src="../image/calologo.png" alt="logo calo peinture" class="logo">
+                <h1>Calo <span class="orange">Peinture</span></h1>
+            </div>
+            <ul>
+               <li><a href="#">Galerie</a></li>
+                <li><a href="#">Article</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header></header>
+
+    <section id="presentation">
+        <div class="main">
+            <div class="presentation">
+                <div class="left">
+                    <h2>Calo <span class="orange">Peinture</span></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur sodales dapibus semper. 
+                        Vestibulum ante ipsum primis in faucibus orci luctus et 
+                        ultrices posuere cubilia curae; Mauris vitae sem mattis, 
+                        vestibulum libero pulvinar, viverra tellus. Orci varius 
+                        natoque penatibus et magnis dis parturient montes, 
+                        nascetur ridiculus mus. Sed nec lacus ultricies, fringilla 
+                        lorem ac, feugiat odio. Vivamus lobortis dolor sit amet 
+                        scelerisque fermentum. <br /> <br />Sed eget tincidunt libero, eu 
+                        bibendum mi. Vestibulum rhoncus mattis arcu, ac convallis 
+                        neque cursus sed. Etiam in ante est. Donec tristique ut 
+                        massa id iaculis. 
+                    </p>
+                </div>
+                <div class="right">
+                    <img src="../image/header_image.jpg" alt="logo calo peinture" class="logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galerie">
+        <div class="main">
+            <div class="galerie">
+                <img src="../image/calologo.png" alt="logo calo peinture" class="photo_galerie">
+                <img src="../image/calologo.png" alt="logo calo peinture" class="photo_galerie">
+                <img src="../image/calologo.png" alt="logo calo peinture" class="photo_galerie">
+                <img src="../image/calologo.png" alt="logo calo peinture" class="photo_galerie">
+            </div>
+            <p><a href="">Voir plus</a></p>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="main">
+            <div class="footer">
+                <img src="../image/footercalo.png" alt="logo calo peinture footer" class="logofooter">
+                <div class="information">
+                    <p>biancola.calo@outlook.be | prof peinture en batiment</p> <!--rajouter mailto-->
+                    <p>Galerie & Article</p><!--rajouter les lien-->
+                </div>
+            </div>
+            <div class="line"></div>
+            <p class="copyright">©Calo Peinture | Designed and created by Julien Jacobs</p>
+        </div>
+    </footer>
+
+    <script defer>
+        let nav = document.getElementById('nav');
+        
+        window.addEventListener('scroll', function() {
+            const offset = window.pageYOffset;
+
+            if(offset > 100) {
+                nav.classList.add('scroll')
+                mav.style.transition = "all 0.1s";
+            } else {
+                nav.classList.remove('scroll')
+            }
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,199 @@
+@import "libs/variable.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main{
+    width: 70%;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: $background;
+    width: 100%;
+    box-shadow: 1px 1px 5px $shadow;
+    position: fixed;
+
+    .navbar{
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 100px;
+    }
+
+    .logo-titre{
+        display: flex;
+        align-items: center;
+
+        h1{
+            color: $thirdary;
+            font-size: 40px;
+            text-shadow: 1px 1px 2px $shadow;
+            font-family: 'barlow';
+
+            .orange{
+                color: $primary;
+            }
+        }
+
+        img{
+            width: auto;
+            height: 80px;
+        }
+    }
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        li{
+            width: 100px;
+            font-size: 20px;
+            font-family: barlow;
+            font-weight: 600;
+
+            a{
+                color: $text;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &.scroll{
+        width: 70%;
+        margin-top: 10px;
+        border-radius: 10px 100px / 120px;
+   	    transition: 2s;
+    }
+}
+
+header{
+    height: 600px;
+    width: 100%;
+    background-image: url(../image/header_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 15%;
+    box-shadow: 1px 4px 10px $shadow;
+}
+
+.presentation{
+    margin: 100px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+
+    .left{
+        width: 50%;
+        margin-right: 20px;
+
+        h2{
+            color: $thirdary;
+            font-size: 70px;
+            text-shadow: 1px 1px 2px $shadow;
+            font-family: 'barlow';
+            font-weight: bold;
+
+            .orange{
+                color: $primary;
+            }
+        }
+
+        p{
+            font-size: 20px;
+            font-family: 'barlow';
+            margin-top: 20px;
+            line-height: 1.5;
+            color: $text;
+        }
+    }
+    
+    .right{
+        width: 50%;
+        margin-left: 20px;
+
+        .logo{
+            width: 100%;
+        }
+    }
+}
+
+#galerie{
+    width: 100%;
+    padding: 50px 0;
+    margin-bottom: 100px;
+    
+    .galerie{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .photo_galerie{
+        width: 320px;
+    }
+
+    p{
+        font-family: 'barlow';
+        font-size: 22px;
+        font-weight: bold;
+        text-align: end;
+        margin-top: 20px;
+
+        a{
+           text-decoration: none;
+           color: $text;
+        }
+    }
+
+    .line{
+        width: 15px;
+        border: 1px solid $thirdary;
+        position: absolute;
+        right: 15%;
+    }
+}
+
+footer{
+    background-color: $background;
+    width: 100%;
+
+    .footer{
+        display: flex;
+
+        .logofooter{
+            height: 200px;
+            width: auto;
+            margin-top: -70px;
+        }
+
+        .information{
+            text-align: right;
+            margin: auto 0;
+            width: 100%;
+            font-size: 20px;
+            font-family: 'barlow';
+            color: $text;
+        }
+    }
+
+    .line{
+        width: 50%;
+        border: 1px solid $thirdary;
+        margin: 0 auto;
+    }
+
+    .copyright{
+        text-align: center;
+        color: $text;
+        margin-bottom: 10px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+}
