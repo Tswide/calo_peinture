@@ -130,7 +130,7 @@ header{
     padding: 50px 0;
     margin-bottom: 100px;
 
-    .conteneur-article{
+    .presentation-article{
         display: flex;
         justify-content: space-between;
         margin: 50px 0;
@@ -149,7 +149,7 @@ header{
 
     #filter_navigation{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         list-style-type: none;
 
         li{
