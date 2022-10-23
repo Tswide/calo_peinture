@@ -125,44 +125,44 @@ header{
     }
 }
 
-#galerie{
+#article{
     width: 100%;
     padding: 50px 0;
     margin-bottom: 100px;
-    
-    .galerie{
+
+    .conteneur-article{
         display: flex;
         justify-content: space-between;
-    }
+        margin: 50px 0;
 
-    .photo_galerie{
-        width: 320px;
-    }
+        .image-article{
+            width: 40%;
+            height: 300px;
+            background-image: url(../image/header_image.jpg);
+            background-size: contain;
+        }
 
-    p{
-        font-family: 'barlow';
-        font-size: 22px;
-        font-weight: bold;
-        text-align: end;
-        margin-top: 20px;
-
-        a{
-           text-decoration: none;
-           color: $text;
+        .contenue{
+            width: 55%;
         }
     }
 
-    .line{
-        width: 15px;
-        border: 1px solid $thirdary;
-        position: absolute;
-        right: 15%;
+    #filter_navigation{
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+
+        li{
+            font-size: 20px;
+            color: $text;
+        }
     }
 }
 
 footer{
     background-color: $background;
     width: 100%;
+    margin-top: 100px;
 
     .footer{
         display: flex;
