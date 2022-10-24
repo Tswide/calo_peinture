@@ -1,4 +1,6 @@
 @import "libs/variable.scss";
+@import "libs/tools.scss";
+
 
 *{
     padding: 0;
@@ -14,6 +16,9 @@ body{
 .main{
     width: 70%;
     margin: 0 auto;
+}
+.hide{
+    display: none;
 }
 
 nav{
@@ -94,7 +99,7 @@ header{
         width: 50%;
         margin-right: 20px;
 
-        h2{
+        h1{
             color: $thirdary;
             font-size: 70px;
             text-shadow: 1px 1px 2px $shadow;
@@ -107,11 +112,9 @@ header{
         }
 
         p{
-            font-size: 20px;
-            font-family: 'barlow';
+            @extend %p;
             margin-top: 20px;
             line-height: 1.5;
-            color: $text;
         }
     }
     
@@ -130,23 +133,6 @@ header{
     padding: 50px 0;
     margin-bottom: 100px;
 
-    .presentation-article{
-        display: flex;
-        justify-content: space-between;
-        margin: 50px 0;
-
-        .image-article{
-            width: 40%;
-            height: 300px;
-            background-image: url(../image/header_image.jpg);
-            background-size: contain;
-        }
-
-        .contenue{
-            width: 55%;
-        }
-    }
-
     #filter_navigation{
         display: flex;
         justify-content: space-between;
@@ -155,6 +141,65 @@ header{
         li{
             font-size: 20px;
             color: $text;
+            padding: 10px 20px;
+        }
+
+        .active{
+            background-color: $background;
+            border: 1px solid $text;
+        }
+    }
+
+    .presentation-article{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+
+        .image-article{
+            width: 48%;
+            height: 400px;
+            background-image: url(../image/header_image.jpg);
+            background-size: contain;
+        }
+
+        .contenue{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 48%;
+            @extend %h2;
+            @extend %p;
+        }
+
+        div{
+            h2{
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .suite-article{
+        @extend %h2;
+        @extend %p;
+
+        div{
+           margin: 40px 0;
+
+           h2{
+            margin-bottom: 10px;
+           }
+
+           ul{
+            padding-left: 20px;
+           }
+        }
+    }
+
+    .autre-format{
+        h3{
+            @extend %h2;
+            text-align: center;
+            margin-bottom: 40px;
         }
     }
 }
