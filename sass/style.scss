@@ -169,6 +169,10 @@ header{
             width: 48%;
             @extend %h2;
             @extend %p;
+
+            ul{
+                padding-left: 20px;
+            }
         }
 
         div{
@@ -192,6 +196,20 @@ header{
            ul{
             padding-left: 20px;
            }
+        }
+
+        .center{
+            text-align: center;
+        }
+
+        table{
+            
+
+            th{
+                background-color: $background;
+                width: 15%;
+                
+            }
         }
     }
 

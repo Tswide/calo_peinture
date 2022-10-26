@@ -162,6 +162,9 @@ header {
   justify-content: space-between;
   width: 48%;
 }
+#article .presentation-article .contenue ul {
+  padding-left: 20px;
+}
 #article .presentation-article div h2 {
   margin-bottom: 10px;
 }
@@ -173,6 +176,13 @@ header {
 }
 #article .suite-article div ul {
   padding-left: 20px;
+}
+#article .suite-article .center {
+  text-align: center;
+}
+#article .suite-article table th {
+  background-color: #fff3e0;
+  width: 15%;
 }
 #article .autre-format h3 {
   text-align: center;
