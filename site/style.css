@@ -124,6 +124,7 @@ header {
 }
 .presentation .right .logo {
   width: 100%;
+  background-size: cover;
 }
 
 #article {
