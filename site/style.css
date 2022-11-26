@@ -150,11 +150,35 @@ header {
   justify-content: space-between;
   padding-top: 50px;
 }
-#article .presentation-article .image-article {
+#article .presentation-article .image-tapissage {
   width: 48%;
   height: 400px;
-  background-image: url(../image/header_image.jpg);
-  background-size: contain;
+  background-image: url(../image/papierPeint.jpeg);
+  background-size: cover;
+}
+#article .presentation-article .image-travaux {
+  width: 48%;
+  height: 400px;
+  background-image: url(../image/planning.jpg);
+  background-size: cover;
+}
+#article .presentation-article .image-couleur {
+  width: 48%;
+  height: 400px;
+  background-image: url(../image/couleur.jpg);
+  background-size: cover;
+}
+#article .presentation-article .image-lessivage {
+  width: 48%;
+  height: 400px;
+  background-image: url(../image/nettoyer.jpg);
+  background-size: cover;
+}
+#article .presentation-article .image-enduisage {
+  width: 48%;
+  height: 400px;
+  background-image: url(../image/enduisage.jpg);
+  background-size: cover;
 }
 #article .presentation-article .contenue {
   display: flex;
